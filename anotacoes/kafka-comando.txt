@@ -1,0 +1,17 @@
+
+Nome CLI:
+    Kafka - zookeeper-server
+    Kafka - apache-kafka
+
+Iniciando Zookeeper Server:
+    .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+Iniciando Kafka Server:
+    .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Listar os Tópicos Disponíveis:
+    .\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+
+Criando um Tópico:
+    .\bin\windows\kafka-topics.bat --create --topic hello_world --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
+    OBS: Na criação de tópicos devemos aderir a um padrão de nomes e usar sempre um caractere especial unico como '.' ou '_'.

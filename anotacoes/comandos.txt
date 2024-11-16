@@ -1,0 +1,3 @@
+docker exec -it 5a8c1c2fff92 bash
+docker exec -it f7b25ea470f0 bash
+docker exec -it 4df6ffd14c9d bash
